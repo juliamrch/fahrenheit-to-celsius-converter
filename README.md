@@ -9,25 +9,7 @@ Here are some delails about Rust learning curve.
 
 ### Primitive code
 
-First and primitive version of the code looked like this :
-
-`/src/main.rs`
-
-```rust
-
-fn main() {
-
-    let fahrenheit: i32 = -5;
-
-    let celsius: i32 = fahrenheit - 17;
-
-    println!("When the Fahrenheit temperature is {fahrenheit} the Celsius temperature is {celsius}");
-
-}
-
-```
-
-This was written after reading the [Numeric Operations](https://doc.rust-lang.org/book/ch03-02-data-types.html#numeric-operations). The difficulty was to find a way to perfome a numeric operation from a string.
+First and primitive version of the code was written after reading the [Numeric Operations](https://doc.rust-lang.org/book/ch03-02-data-types.html#numeric-operations). The difficulty was to find a way to perfome a numeric operation from a string.
 
 ## Converting a String
 
