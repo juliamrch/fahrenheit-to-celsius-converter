@@ -31,11 +31,11 @@ This was written after reading the [Numeric Operations](https://doc.rust-lang.or
 
 ## Converting a String
 
-Since we can't just perfom numeric operations from strings, we need to convert it to another type of data, in our case, an `ì32` integrer (which is a number without a fractional component).
+Since we can't just perfom numeric operations from strings, we need to convert it to another type of data, in our case, an `f64` integrer (which is a number without a fractional component).
 
 In this case, the `parse`method was used to convert a string to another type. This will only work on characters that can logically be converted into numbers. More details can be found in the [Rust Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html?highlight=parse#comparing-the-guess-to-the-secret-number).
 
-Some useful code example can be found [here](https://dev.to/jahwi/a-simple-user-input-collection-validation-and-conversion-library-in-rust-34cj) as well. This post helped to understand I didn't need to create a `celsius` variable and work from the input only and shadow it.
+Some useful code example can be found [here](https://dev.to/jahwi/a-simple-user-input-collection-validation-and-conversion-library-in-rust-34cj) as well. This post helped to understand I didn't need to create a `celsius` variable and work from the input only and shadow it for simple operations.
 
 ## Handling errors
 
