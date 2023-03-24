@@ -20,8 +20,6 @@ fn main() {
             }
         };
         
-        //Add a . after the number when using f64 format
-
         print!("Celsius temperature is {} ", (fahrenheit - 32.)/1.8); //Add a . after the number when using f64 format
        
 
