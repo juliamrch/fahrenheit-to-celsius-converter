@@ -11,13 +11,13 @@ Here are some delails about Rust learning curve.
 
 First and primitive version of the code looked like this :
 
-`/src/main.rs
+`/src/main.rs`
 
 ```rust
 
 fn main() {
 
-    let fahrenheit:i32 = -5;
+    let fahrenheit: i32 = -5;
 
     let celsius: i32 = fahrenheit - 17;
 
