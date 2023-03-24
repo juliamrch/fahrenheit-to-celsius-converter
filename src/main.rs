@@ -12,17 +12,17 @@ fn main() {
             .expect("Failed to read input.");
 
     // Convert to an i32, keeps the loop going if invalid input.
-        let fahrenheit: f64 = match fahrenheit.trim().parse::<f64>() {
-            Ok(parsed_fahrenheit) => parsed_fahrenheit,
+        let fahrenheit: f64 = match fahrenheit.trim().parse() {
+            Ok(num) => num,
             Err(_) => {
-                println!("please input a valid number");
+                println!("please input a valid temperature");
                 continue;
             }
         };
+        
+        //Add a . after the number when using f64 format
 
-        let celsius = (fahrenheit - 32.1)/1.8;
-
-        print!("Celsius temperature is {celsius} ");
+        print!("Celsius temperature is {} ", (fahrenheit - 32.)/1.8); //Add a . after the number when using f64 format
        
 
         println!("when the Fahrenheit temperature is {fahrenheit} ");
