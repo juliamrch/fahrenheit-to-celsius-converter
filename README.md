@@ -24,6 +24,7 @@ The number of decimals is limited to one using this parameter, because no one ca
 ```rust
  println!("Your temperature is {:.1}° Celsius", converted_temperature);
 ```
+
 #### Getting input from a new String
 
 In this case, the `parse`method was used to convert a string to another type. This will only work on characters that can logically be converted into numbers. More details can be found in the [Rust Book](https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html?highlight=parse#comparing-the-guess-to-the-secret-number).

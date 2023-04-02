@@ -68,7 +68,7 @@ fn main() {
         .read_line(&mut temperature)
         .expect("Failed to read line");
 
-        // Parse string to be able to perfom a mathematic operation on it
+        // Parse string to be able to perfom a numeric operation on it
         let temperature: f32 = match temperature.trim().parse() {
             
             // Make sure the input is a number
