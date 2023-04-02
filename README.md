@@ -1,7 +1,7 @@
 
 # Unofficial Sean Paul's temperature converter
 
-This simple program converts temperatures between Fahrenheit and Celsius as it ouputs "Temperature" lyrics by Sean Paul.
+This simple program converts temperatures between Fahrenheit and Celsius and _vice versa_ as it ouputs "Temperature" lyrics by Sean Paul.
 
 ## Origins
 
