@@ -2,28 +2,44 @@ use std::io;
 
 fn main() {
 
+     println!("=========================================");
+     println!("| Let's convert a temperature! |");
+     println!("=========================================\n");
+    
     loop {
-        let mut fahrenheit = String::new();
+        // Gets input from user
+        println!("Please input a temperature");
 
-    // Reads the input from STDIN and places it in the String named fahrenheit.
-        println!("What's the Fahrenheit temperature?");
+        let mut temperature = String::new();
+        
+        // Reads the input
+        io::stdin().read_line(&mut temperature)
+        .expect("Failed to read line.");
 
-        io::stdin().read_line(&mut fahrenheit)
-            .expect("Failed to read input.");
-
-    // Convert to an i32, keeps the loop going if invalid input.
-        let fahrenheit: f64 = match fahrenheit.trim().parse() {
+        // Parses the new string to interpret as a f32 number.
+        // This is necessary for any input, to perfom mathematic operations from an inputed number.
+        let temperature: f32 = match temperature.trim().parse() {
+            
+            // Makes sure the input is a number
             Ok(num) => num,
-            Err(_) => {
-                println!("please input a valid temperature");
-                continue;
-            }
+            Err(_) => continue
         };
         
-        print!("Celsius temperature is {} ", (fahrenheit - 32.)/1.8); //Add a . after the number when using f64 format
-       
-
-        println!("when the Fahrenheit temperature is {fahrenheit} ");
-        break;
+        //Returns the converted temperature
+        println!("Fahrenheit temperature is {:.1}", celsius_to_fahrenheit(temperature));
+        println!("Celsius temperature is {:.1}", fahrenheit_to_celsius(temperature));
     }
+
+}
+
+// Converts Celsius to Fahrenheit
+fn celsius_to_fahrenheit(temperature: f32) -> f32 {
+    let temperature = temperature * 1.8 + 32.0;
+    return temperature;
+}
+
+// Converts Fahrenheit to Celsius
+fn fahrenheit_to_celsius(temperature: f32) -> f32 {
+    let temperature = (temperature-32.0) / 1.8;
+    return temperature;
 }
